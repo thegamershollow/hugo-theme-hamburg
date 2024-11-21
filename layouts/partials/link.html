@@ -59,4 +59,9 @@
       <i class="fa fa-key"></i>
     </a>
   {{ end }}
+  {{ with .Site.Params.bluesky }}
+    <a href="https://bsky.app/profile/{{ . }}" target="_blank">
+      <i class="fa fa-bluesky"></i>
+    </a>
+  {{ end }}
 </div>
